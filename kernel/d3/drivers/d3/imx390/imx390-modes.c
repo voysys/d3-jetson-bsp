@@ -67,7 +67,7 @@ const struct camera_common_frmfmt imx390_modes_formats[] = {
 		.size = {1936, 1100},
 		.framerates = imx390_modes_60fps,
 		.num_framerates = 1,
-		.hdr_en = 1,
+		.hdr_en = 0,
 		.mode = IMX390_MODE_HDR,
 	},
 #endif	/* CONFIG_D3_IMX390_HDR_ENABLE */

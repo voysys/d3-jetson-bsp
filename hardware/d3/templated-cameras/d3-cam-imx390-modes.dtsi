@@ -71,43 +71,25 @@ mode2 {
 #if D3_IMX390_HDR_ENABLE
 mode3 {
 	IMX390_COMMON;
-	mode_type = "bayer_wdr_pwl";
+	mode_type = "bayer";
 
 	/* 60 fps */
 	line_length = "2200";
 
 	/* Gain is currently fixed in HDR mode */
 	min_gain_val = "0";
-	max_gain_val = "0";
+	max_gain_val = "30";
 
 	min_framerate = "60";
 	max_framerate = "60";
 
 	/* Units are microseconds */
-	min_exp_time = "11000";
-	max_exp_time = "11000";
+	min_exp_time = "30";
+	max_exp_time = "16666";
 
 	/* Xavier supports up to 20bpp, Tx2 supports up to 24bpp */
-	dynamic_pixel_bit_depth = "20";
+	dynamic_pixel_bit_depth = "12";
 	/* Xavier supports up to 9 control points. */
-	num_control_point = "9";
-	control_point_x_0 = "0";
-	control_point_y_0 = "0";
-	control_point_x_1="474";
-	control_point_y_1="474";
-	control_point_x_2="1359";
-	control_point_y_2="916";
-	control_point_x_3="5226";
-	control_point_y_3="1752";
-	control_point_x_4="11006";
-	control_point_y_4="2290";
-	control_point_x_5="18490";
-	control_point_y_5="2574";
-	control_point_x_6="71038";
-	control_point_y_6="2767";
-	control_point_x_7="272927";
-	control_point_y_7="3140";
-	control_point_x_8="1048575";
-	control_point_y_8="3855";
+	num_control_point = "0";
 };
 #endif	/* D3_IMX390_HDR_ENABLE */
